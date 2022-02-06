@@ -19,9 +19,14 @@ var formField = document.querySelector("#inputForm");
 var searchButton = document.querySelector("#searchBtn");
 
 searchButton.addEventListener("click", function() {
-    var cityName = formField.value;
-    formField.value = "";
-    weatherResponse(cityName);
+
+    if (formField.value == "") {
+        alert("Please enter a city name before searching.");
+    } else {
+        var cityName = formField.value;
+        formField.value = "";
+        weatherResponse(cityName);
+    }
 })
 
 function weatherResponse(city) {
