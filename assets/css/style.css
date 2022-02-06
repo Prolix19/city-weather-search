@@ -30,25 +30,25 @@ hr {
 }
 
 .mainBody {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .card-body {
     margin: 10px;
 }
 
+.forecast {
+    height: 225px;
+    width: 165px;
+    float: left;
+    margin: 12px;
+    color: white;
+}
+
 .badge {
     height: 30px;
     width: 60px;
     font-size: 16px;
-    color: white;
-}
-
-.forecast {
-    height: 165px;
-    width: 165px;
-    float: left;
-    margin: 7px;
     color: white;
 }
 
