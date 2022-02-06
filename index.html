@@ -5,15 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Dashboard</title>
 
         <!-- Bringing in Bootstrap and my styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Weather Dashboard</title>
     </head>
 
     <body>
-
         <header>
             <h1 class="bg-primary.bg-gradient">Weather Dashboard</h1>
         </header>
@@ -25,55 +24,38 @@
                 <div class="form-group form-group-fluid">
                     <label class="col-12">Search for a City:</label>
                     <div class="row ml-1:">
-
                         <!-- Search field -->
                         <div class="col-12">
                             <input type="text" class="form-control" placeholder="Minneapolis" id="inputForm">
                         </div>
-
                         <!-- Search button -->
                         <div class="col-12 pt-3 mx-auto">
-                            <button id="searchBtn" type="submit" class="btn btn-success">Search</button>
+                            <button id="searchBtn" type="submit" class="btn btn-success col-12">Search</button>
                         </div>
                     </div>
                 </div>
-
+                <hr />             
                 <div class="list-group"></div>
-
             </section>
 
-            <section class="col-9">
+            <section class="col-9 main" style="display: none;">
                 <!-- Main section to display searched-for city weather info from the API call. -->
-
                 <div class="card-body mainBody">
                     <h4 class="card-title mainTitle"></h4>
                     <img class="icon">
                 </div>
-                
                 <div class="card-body mt-3">
                     <h4 class="card-title forecastTitle">5-Day Forecast:</h4>
                 </div>
-                
-                <div class="fiveDay mb-3 ml-4" style="display: inline;">
-                
-                </div>
-
+                <div class="fiveDay mb-3 ml-4" style="display: inline;"></div>
             </section>
         </main>
-        
-        <footer>
-            <!-- Probably won't use this -->
-        </footer>
 
-        <!-- Bringing in jQuery, jQuery UI, jQuery UI Touch Punch, Popper, Bootstrap JS, Moment.js, and my JS -->
+        <!-- Bringing in jQuery, Bootstrap JS, Moment.js, and my JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="./assets/js/script.js"></script>
-
     </body>
 
 </html>

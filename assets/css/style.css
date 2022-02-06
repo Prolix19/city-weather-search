@@ -1,4 +1,4 @@
-/* Styling the header "Weather Dashboard" to try to mimic the mock-up */
+/* Styling the "Weather Dashboard" header to mimic the mock-up */
 header h1 {
     text-align: center;
     font-weight: bold;
@@ -14,29 +14,17 @@ header h1 {
     padding-left: 6px;
 }
 
+/* Coloring the button like the mock-up */
 #searchBtn {
     background-color: #5098E6;
-    justify-content: center;
 }
 
-/* New below */
-.navbar-brand { 
-    margin: 0 auto;
-    font-size: 60px;
+/* Horizontal rule between the search button and any saved cities, like the mock-up */
+hr {
+    background-color: black;
 }
 
-.searchBar {
-    float: left;
-    width: 350px;
-    border: 1px solid rgb(255, 255, 255, .3);
-    padding: 10px;
-    margin: 5px;
-}
-
-.master {
-    color: white;
-}
-
+/* Set various font sizes below */
 .mainTitle {
     font-size: 32px;
 }
@@ -47,10 +35,6 @@ header h1 {
 
 .card-body {
     margin: 10px;
-}
-
-.icon, .card-title {
-    display: inline;
 }
 
 .badge {
@@ -71,4 +55,9 @@ header h1 {
 .dayIcon {
     height: 50px;
     width: 50px;
+}
+
+/* Set display type on a couple classes */
+.icon, .card-title {
+    display: inline;
 }
