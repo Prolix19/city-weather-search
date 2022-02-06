@@ -1,8 +1,6 @@
-//     User story:
-// AS A traveler
-// I WANT to see the weather outlook for multiple cities
-// SO THAT I can plan a trip accordingly
-
+// OpenWeatherMap API key:
+// c2efb1d1dc0867fbc637aacba71f1b06
+// e.g. https://api.openweathermap.org/data/2.5/weather?APPID=c2efb1d1dc0867fbc637aacba71f1b06&q= [city name]
 
 //     Acceptance criteria:
 // GIVEN a weather dashboard with form inputs
