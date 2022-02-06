@@ -19,7 +19,7 @@ SO THAT I can plan a trip accordingly
 
 ### Screenshot of Finished Dashboard
 
-![Picture of the Weather Dashboard](assets/images/screenshot.png)
+![Picture of the Weather Dashboard](assets/images/screenshot.gif)
 
 ### For More Details:
 
