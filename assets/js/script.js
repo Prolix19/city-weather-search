@@ -15,3 +15,31 @@
 // WHEN I click on a city in the search history
 // THEN I am again presented with current and future conditions for that city
 
+var formField = document.querySelector("#inputForm");
+var searchButton = document.querySelector("#searchBtn");
+
+searchButton.addEventListener("click", function() {
+    var cityName = formField.value;
+    formField.value = "";
+    weatherResponse(cityName);
+})
+
+function weatherResponse(city) {
+    var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?appid=c2efb1d1dc0867fbc637aacba71f1b06&q=" + city;
+
+    fetch(weatherUrl)
+    .then(function(weatherResponse) {
+        if(weatherResponse.ok) {
+            weatherResponse.json()
+            .then(function(weatherData) {
+                // Do stuff with the weatherData
+                console.log(weatherData);
+            });
+        } else {
+            alert("Error: " + weatherResponse.statusText);
+        }
+    })
+    .catch(function(weatherError) {
+        alert("Please try again later");
+    });
+}
