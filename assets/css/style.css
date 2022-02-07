@@ -15,8 +15,17 @@ header h1 {
 }
 
 /* Coloring the button like the mock-up */
+.btn {
+    background-color: #AEAEAE;
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 #searchBtn {
     background-color: #5098E6;
+    color: white;
+    letter-spacing: 1px;
 }
 
 /* Horizontal rule between the search button and any saved cities, like the mock-up */

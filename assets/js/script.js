@@ -34,7 +34,7 @@ function renderSavedCities() {
 
 // Add a button with the name of a searched-for city to the list-group div
 function makeButton(city) {
-    var newBtn = $("<button class='btn btn-primary m-1 saveCity'>");
+    var newBtn = $("<button class='btn m-1 saveCity'>");
     newBtn.text(city);
     $(".list-group").append(newBtn);
 };
